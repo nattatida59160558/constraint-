@@ -10,11 +10,12 @@
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="@string/box_one"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/maginwide" android:layout_marginRight="@dimen/maginwide"
-            android:layout_marginLeft="@dimen/maginwide"/>
+            android:layout_marginLeft="@dimen/maginwide" android:fontFamily="@font/roboto"
+            android:textSize="@dimen/box_text_size" style="@style/whiteBox" android:id="@+id/box_onetext"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
