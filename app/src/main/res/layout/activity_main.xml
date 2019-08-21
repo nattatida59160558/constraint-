@@ -24,5 +24,34 @@
             android:id="@+id/box_twotext"
             app:layout_constraintTop_toBottomOf="@+id/box_onetext" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp" android:layout_marginTop="16dp" style="@style/whiteBox"/>
+    <TextView
+            android:text="@string/box_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/box_threetext" style="@style/whiteBox"
+            app:layout_constraintBottom_toTopOf="@+id/box_fourtext"
+            app:layout_constraintTop_toTopOf="@+id/box_twotext" app:layout_constraintStart_toEndOf="@+id/box_twotext"
+            android:layout_marginStart="@dimen/maginwide" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/maginwide"/>
+    <TextView
+            android:text="@string/box_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/box_fourtext"
+            style="@style/whiteBox" app:layout_constraintTop_toBottomOf="@+id/box_threetext"
+            app:layout_constraintBottom_toTopOf="@+id/box_fivettext"
+            app:layout_constraintStart_toEndOf="@+id/box_twotext" android:layout_marginStart="@dimen/maginwide"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/maginwide"
+            android:layout_marginTop="@dimen/maginwide" android:layout_marginBottom="@dimen/maginwide"/>
+    <TextView
+            android:text="@string/box_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/box_fivettext" style="@style/whiteBox"
+            app:layout_constraintBottom_toBottomOf="@+id/box_twotext"
+            app:layout_constraintTop_toBottomOf="@+id/box_fourtext"
+            app:layout_constraintStart_toEndOf="@+id/box_twotext" android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/maginwide"
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
